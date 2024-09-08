@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Copy Box</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="code-container">
+        <button class="copy-button" onclick="copyCode()">Copy Code</button>
+        <pre id="code-block">
+            <code>
+                <!-- Paste your code here -->
+                #include <stdio.h>
+
+                    int main() {
+                        int a, b, c;
+                        int largest;
+                    
+                        // Input three numbers
+                        printf("Enter three numbers: ");
+                        scanf("%d %d %d", &a, &b, &c);
+                    
+                        // Determine the largest number using nested if-else
+                        if (a > b) {
+                            if (a > c) {
+                                largest = a;  // a is greater than both b and c
+                            } else {
+                                largest = c;  // c is greater than a and b
+                            }
+                        } else {
+                            if (b > c) {
+                                largest = b;  // b is greater than both a and c
+                            } else {
+                                largest = c;  // c is greater than a and b
+                            }
+                        }
+                    
+                        // Output the result
+                        printf("The largest number is: %d\n", largest);
+                    
+                        return 0;
+                    }
+                    
+   
+
+                </code>
+        </pre>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
